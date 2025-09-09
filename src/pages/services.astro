@@ -1,0 +1,175 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Services - Jacksonville Lawn Care</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f8f9fa;
+			}
+			.header {
+				background-color: #2d5c3e;
+				color: white;
+				padding: 1rem 0;
+			}
+			.nav {
+				max-width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 2rem;
+			}
+			.nav ul {
+				list-style: none;
+				display: flex;
+				gap: 2rem;
+				margin: 0;
+				padding: 0;
+			}
+			.nav a {
+				color: white;
+				text-decoration: none;
+				font-weight: 500;
+			}
+			.nav a:hover {
+				text-decoration: underline;
+			}
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+			.services-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				margin-top: 2rem;
+			}
+			.service-card {
+				background: white;
+				border-radius: 8px;
+				padding: 2rem;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			}
+			.service-card h3 {
+				color: #2d5c3e;
+				margin-bottom: 1rem;
+			}
+			.price {
+				font-weight: bold;
+				color: #4a7c59;
+				font-size: 1.2rem;
+				margin-top: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<h1>Jacksonville Lawn Care</h1>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/locations">Locations</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="container">
+			<h1>Our Lawn Care Services</h1>
+			<p>Professional lawn care services throughout Jacksonville, Florida. We provide reliable, high-quality service to keep your property looking its best.</p>
+
+			<div class="services-grid">
+				<div class="service-card">
+					<h3>Weekly Lawn Mowing</h3>
+					<p>Regular mowing service to keep your grass at the optimal height. Includes edging and cleanup.</p>
+					<ul>
+						<li>Professional equipment used</li>
+						<li>Consistent schedule</li>
+						<li>Edge trimming included</li>
+						<li>Debris cleanup</li>
+					</ul>
+					<div class="price">Starting at $35/visit</div>
+				</div>
+
+				<div class="service-card">
+					<h3>Landscape Maintenance</h3>
+					<p>Complete landscape care including pruning, weeding, and seasonal cleanup.</p>
+					<ul>
+						<li>Shrub and tree pruning</li>
+						<li>Weed control</li>
+						<li>Mulching</li>
+						<li>Seasonal cleanups</li>
+					</ul>
+					<div class="price">Custom pricing</div>
+				</div>
+
+				<div class="service-card">
+					<h3>Fertilization Programs</h3>
+					<p>Customized fertilization and treatment programs to keep your lawn healthy year-round.</p>
+					<ul>
+						<li>Soil analysis</li>
+						<li>Custom fertilizer blends</li>
+						<li>Weed and pest control</li>
+						<li>Seasonal treatments</li>
+					</ul>
+					<div class="price">Starting at $75/treatment</div>
+				</div>
+
+				<div class="service-card">
+					<h3>Pressure Washing</h3>
+					<p>Professional pressure washing for driveways, sidewalks, and exterior surfaces.</p>
+					<ul>
+						<li>Driveway cleaning</li>
+						<li>Sidewalk cleaning</li>
+						<li>Deck and patio washing</li>
+						<li>House exterior cleaning</li>
+					</ul>
+					<div class="price">Starting at $150</div>
+				</div>
+
+				<div class="service-card">
+					<h3>Irrigation Services</h3>
+					<p>Sprinkler system installation, repair, and maintenance to keep your lawn properly watered.</p>
+					<ul>
+						<li>System installation</li>
+						<li>Repair services</li>
+						<li>Seasonal startup/shutdown</li>
+						<li>System optimization</li>
+					</ul>
+					<div class="price">Call for quote</div>
+				</div>
+
+				<div class="service-card">
+					<h3>Tree and Shrub Care</h3>
+					<p>Professional tree and shrub services to maintain the health and appearance of your landscape.</p>
+					<ul>
+						<li>Professional pruning</li>
+						<li>Disease treatment</li>
+						<li>Removal services</li>
+						<li>Health assessments</li>
+					</ul>
+					<div class="price">Call for quote</div>
+				</div>
+			</div>
+
+			<div style="margin-top: 3rem; text-align: center;">
+				<h2>Ready to Get Started?</h2>
+				<p>Contact us today for a free estimate on any of our services!</p>
+				<a href="/contact" style="background-color: #2d5c3e; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold;">Get Free Estimate</a>
+			</div>
+		</main>
+	</body>
+</html>

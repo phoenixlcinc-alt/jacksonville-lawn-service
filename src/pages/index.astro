@@ -1,0 +1,312 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Jacksonville Lawn Care - Professional Lawn & Landscape Services</title>
+		<meta name="description" content="Professional lawn care and landscaping services in Jacksonville, Florida. Reliable, affordable, and trusted by homeowners and businesses throughout Northeast Florida.">
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f8f9fa;
+			}
+			.header {
+				background-color: #2d5c3e;
+				color: white;
+				padding: 1rem 0;
+			}
+			.nav {
+				max-width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 2rem;
+			}
+			.nav ul {
+				list-style: none;
+				display: flex;
+				gap: 2rem;
+				margin: 0;
+				padding: 0;
+			}
+			.nav a {
+				color: white;
+				text-decoration: none;
+				font-weight: 500;
+			}
+			.nav a:hover {
+				text-decoration: underline;
+			}
+			.hero {
+				background: linear-gradient(rgba(45, 92, 62, 0.8), rgba(45, 92, 62, 0.8)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect fill="%234a7c59" width="1000" height="600"/><circle fill="%23ffffff" opacity="0.1" cx="200" cy="200" r="100"/><circle fill="%23ffffff" opacity="0.1" cx="800" cy="400" r="150"/></svg>');
+				background-size: cover;
+				background-position: center;
+				color: white;
+				text-align: center;
+				padding: 6rem 2rem;
+			}
+			.hero h1 {
+				font-size: 3rem;
+				margin-bottom: 1rem;
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+			}
+			.hero p {
+				font-size: 1.3rem;
+				margin-bottom: 2rem;
+				max-width: 600px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.cta-buttons {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.cta-btn {
+				background-color: #4a7c59;
+				color: white;
+				padding: 1rem 2rem;
+				text-decoration: none;
+				border-radius: 5px;
+				font-weight: bold;
+				border: 2px solid #4a7c59;
+				transition: all 0.3s ease;
+			}
+			.cta-btn:hover {
+				background-color: transparent;
+				color: white;
+				border-color: white;
+			}
+			.cta-btn.secondary {
+				background-color: transparent;
+				border-color: white;
+			}
+			.cta-btn.secondary:hover {
+				background-color: white;
+				color: #2d5c3e;
+			}
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+			.services-preview {
+				padding: 4rem 0;
+			}
+			.services-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				margin-top: 2rem;
+			}
+			.service-card {
+				background: white;
+				border-radius: 8px;
+				padding: 2rem;
+				text-align: center;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+				transition: transform 0.3s ease;
+			}
+			.service-card:hover {
+				transform: translateY(-5px);
+			}
+			.service-card h3 {
+				color: #2d5c3e;
+				margin-bottom: 1rem;
+			}
+			.service-icon {
+				font-size: 3rem;
+				margin-bottom: 1rem;
+			}
+			.why-choose {
+				background: white;
+				border-radius: 8px;
+				padding: 3rem;
+				margin: 2rem 0;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			}
+			.features-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 2rem;
+				margin-top: 2rem;
+			}
+			.feature {
+				text-align: center;
+			}
+			.feature-icon {
+				font-size: 2.5rem;
+				margin-bottom: 1rem;
+			}
+			.testimonials {
+				background: #e8f5e8;
+				border-radius: 8px;
+				padding: 3rem;
+				margin: 2rem 0;
+			}
+			.testimonial-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				margin-top: 2rem;
+			}
+			.testimonial {
+				background: white;
+				padding: 1.5rem;
+				border-radius: 8px;
+				border-left: 4px solid #2d5c3e;
+			}
+			.contact-section {
+				text-align: center;
+				padding: 3rem;
+				background: #2d5c3e;
+				color: white;
+				border-radius: 8px;
+				margin-top: 2rem;
+			}
+			@media (max-width: 768px) {
+				.hero h1 {
+					font-size: 2rem;
+				}
+				.hero p {
+					font-size: 1.1rem;
+				}
+				.cta-buttons {
+					flex-direction: column;
+					align-items: center;
+				}
+				.nav {
+					flex-direction: column;
+					gap: 1rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<h1>Jacksonville Lawn Care</h1>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/locations">Locations</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="hero">
+			<h1>Professional Lawn Care in Jacksonville, FL</h1>
+			<p>Transform your property with reliable, affordable lawn care and landscaping services. Trusted by homeowners and businesses throughout Northeast Florida.</p>
+			<div class="cta-buttons">
+				<a href="/contact" class="cta-btn">Get Free Estimate</a>
+				<a href="/services" class="cta-btn secondary">View Services</a>
+			</div>
+		</section>
+
+		<main class="container">
+			<section class="services-preview">
+				<h2 style="text-align: center; font-size: 2.5rem; color: #2d5c3e; margin-bottom: 1rem;">Our Services</h2>
+				<p style="text-align: center; font-size: 1.2rem; color: #666; margin-bottom: 3rem;">Complete lawn care and landscaping solutions for your property</p>
+				
+				<div class="services-grid">
+					<div class="service-card">
+						<div class="service-icon">🌱</div>
+						<h3>Weekly Lawn Mowing</h3>
+						<p>Professional mowing, edging, and cleanup services to keep your lawn looking perfect year-round.</p>
+						<p style="color: #4a7c59; font-weight: bold;">Starting at $35/visit</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">🌿</div>
+						<h3>Landscape Maintenance</h3>
+						<p>Complete landscape care including pruning, weeding, mulching, and seasonal cleanups.</p>
+						<p style="color: #4a7c59; font-weight: bold;">Custom pricing</p>
+					</div>
+					<div class="service-card">
+						<div class="service-icon">💧</div>
+						<h3>Irrigation Services</h3>
+						<p>Sprinkler system installation, repair, and maintenance to keep your lawn properly watered.</p>
+						<p style="color: #4a7c59; font-weight: bold;">Call for quote</p>
+					</div>
+				</div>
+				
+				<div style="text-align: center; margin-top: 3rem;">
+					<a href="/services" style="background-color: #2d5c3e; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold;">View All Services</a>
+				</div>
+			</section>
+
+			<section class="why-choose">
+				<h2 style="text-align: center; color: #2d5c3e; margin-bottom: 2rem;">Why Choose Jacksonville Lawn Care?</h2>
+				<div class="features-grid">
+					<div class="feature">
+						<div class="feature-icon">🏆</div>
+						<h3>8+ Years Experience</h3>
+						<p>Local expertise with hundreds of satisfied customers throughout Jacksonville</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">⏰</div>
+						<h3>Reliable Service</h3>
+						<p>Consistent, on-time service you can count on, rain or shine</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">💰</div>
+						<h3>Fair Pricing</h3>
+						<p>Competitive rates with no hidden fees or surprise charges</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">🔧</div>
+						<h3>Professional Equipment</h3>
+						<p>High-quality, well-maintained equipment for efficient, effective service</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">🛡️</div>
+						<h3>Fully Insured</h3>
+						<p>Licensed and insured for your peace of mind and protection</p>
+					</div>
+					<div class="feature">
+						<div class="feature-icon">😊</div>
+						<h3>Satisfaction Guaranteed</h3>
+						<p>We stand behind our work and will make it right if you're not satisfied</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="testimonials">
+				<h2 style="text-align: center; color: #2d5c3e; margin-bottom: 2rem;">What Our Customers Say</h2>
+				<div class="testimonial-grid">
+					<div class="testimonial">
+						<p>"Jacksonville Lawn Care has been taking care of our property for over 3 years. They're always on time, professional, and our lawn has never looked better!"</p>
+						<p><strong>- Sarah M., Riverside</strong></p>
+					</div>
+					<div class="testimonial">
+						<p>"Finally found a lawn service that actually shows up when they say they will. Fair pricing and excellent work. Highly recommend!"</p>
+						<p><strong>- Mike R., Mandarin</strong></p>
+					</div>
+					<div class="testimonial">
+						<p>"They transformed our overgrown landscape into something beautiful. The team is knowledgeable and takes pride in their work."</p>
+						<p><strong>- Jennifer L., San Marco</strong></p>
+					</div>
+				</div>
+			</section>
+
+			<section class="contact-section">
+				<h2>Ready to Get Started?</h2>
+				<p style="font-size: 1.2rem; margin: 1rem 0 2rem;">Join hundreds of satisfied customers who trust us with their lawn care needs.</p>
+				<div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+					<a href="/contact" style="background-color: white; color: #2d5c3e; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold;">Get Free Estimate</a>
+					<a href="tel:+19045551234" style="background-color: transparent; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; border: 2px solid white;">Call (904) 555-1234</a>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>

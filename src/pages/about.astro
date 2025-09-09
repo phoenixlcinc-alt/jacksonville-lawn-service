@@ -1,0 +1,213 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>About Us - Jacksonville Lawn Care</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f8f9fa;
+			}
+			.header {
+				background-color: #2d5c3e;
+				color: white;
+				padding: 1rem 0;
+			}
+			.nav {
+				max-width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 2rem;
+			}
+			.nav ul {
+				list-style: none;
+				display: flex;
+				gap: 2rem;
+				margin: 0;
+				padding: 0;
+			}
+			.nav a {
+				color: white;
+				text-decoration: none;
+				font-weight: 500;
+			}
+			.nav a:hover {
+				text-decoration: underline;
+			}
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+			.hero-section {
+				background: white;
+				border-radius: 8px;
+				padding: 3rem;
+				margin-bottom: 2rem;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+				text-align: center;
+			}
+			.content-section {
+				background: white;
+				border-radius: 8px;
+				padding: 2rem;
+				margin-bottom: 2rem;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			}
+			.stats-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 2rem;
+				margin: 2rem 0;
+			}
+			.stat-card {
+				text-align: center;
+				padding: 1.5rem;
+				background: #e8f5e8;
+				border-radius: 8px;
+			}
+			.stat-number {
+				font-size: 2.5rem;
+				font-weight: bold;
+				color: #2d5c3e;
+			}
+			.values-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+				gap: 1.5rem;
+				margin-top: 2rem;
+			}
+			.value-card {
+				padding: 1.5rem;
+				border-left: 4px solid #2d5c3e;
+				background: #f8f9fa;
+			}
+			.value-card h3 {
+				color: #2d5c3e;
+				margin-bottom: 0.5rem;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<h1>Jacksonville Lawn Care</h1>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/locations">Locations</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="container">
+			<div class="hero-section">
+				<h1>About Jacksonville Lawn Care</h1>
+				<p style="font-size: 1.2rem; color: #666; margin-top: 1rem;">Your trusted partner for professional lawn care and landscaping services throughout the greater Jacksonville area.</p>
+			</div>
+
+			<div class="content-section">
+				<h2>Our Story</h2>
+				<p>Founded in 2015, Jacksonville Lawn Care has grown from a small local operation to one of the most trusted lawn care companies in Northeast Florida. We started with a simple mission: to provide reliable, high-quality lawn care services that homeowners and businesses can count on.</p>
+				
+				<p>What began as a single truck and a passion for outdoor work has evolved into a full-service landscaping company with a team of experienced professionals, state-of-the-art equipment, and an unwavering commitment to customer satisfaction.</p>
+
+				<p>We understand that your property is more than just grass and plants – it's your home, your business, your investment. That's why we treat every lawn as if it were our own, bringing the same level of care and attention to detail whether we're maintaining a small residential yard or managing a large commercial property.</p>
+			</div>
+
+			<div class="stats-grid">
+				<div class="stat-card">
+					<div class="stat-number">500+</div>
+					<div>Happy Customers</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">8+</div>
+					<div>Years of Experience</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">15,000+</div>
+					<div>Lawns Serviced</div>
+				</div>
+				<div class="stat-card">
+					<div class="stat-number">25+</div>
+					<div>Mile Service Radius</div>
+				</div>
+			</div>
+
+			<div class="content-section">
+				<h2>Our Mission</h2>
+				<p>To provide exceptional lawn care and landscaping services that enhance the beauty and value of our customers' properties while building lasting relationships based on trust, reliability, and outstanding results.</p>
+
+				<h2>Why Choose Jacksonville Lawn Care?</h2>
+				<ul>
+					<li><strong>Local Expertise:</strong> Born and raised in Jacksonville, we understand the unique challenges of Florida's climate and soil conditions.</li>
+					<li><strong>Professional Equipment:</strong> We invest in high-quality, well-maintained equipment to ensure efficient and effective service.</li>
+					<li><strong>Trained Team:</strong> Our crew members are experienced, insured, and committed to delivering exceptional results.</li>
+					<li><strong>Flexible Scheduling:</strong> We work around your schedule to provide convenient service times.</li>
+					<li><strong>Competitive Pricing:</strong> Fair, transparent pricing with no hidden fees or surprise charges.</li>
+					<li><strong>Satisfaction Guarantee:</strong> We stand behind our work and will make it right if you're not completely satisfied.</li>
+				</ul>
+			</div>
+
+			<div class="content-section">
+				<h2>Our Values</h2>
+				<div class="values-grid">
+					<div class="value-card">
+						<h3>🌱 Environmental Responsibility</h3>
+						<p>We use eco-friendly practices and products whenever possible, protecting both your property and the environment.</p>
+					</div>
+					<div class="value-card">
+						<h3>⏰ Reliability</h3>
+						<p>When we say we'll be there, we'll be there. Consistent, dependable service you can count on.</p>
+					</div>
+					<div class="value-card">
+						<h3>💎 Quality Workmanship</h3>
+						<p>We take pride in our work and strive for excellence in every job, no matter the size.</p>
+					</div>
+					<div class="value-card">
+						<h3>🤝 Customer Service</h3>
+						<p>Open communication, responsive support, and a genuine commitment to your satisfaction.</p>
+					</div>
+					<div class="value-card">
+						<h3>🏆 Continuous Improvement</h3>
+						<p>We stay current with industry best practices and invest in ongoing training and equipment upgrades.</p>
+					</div>
+					<div class="value-card">
+						<h3>🏠 Community Focus</h3>
+						<p>As a local business, we're invested in making Jacksonville a more beautiful place to live and work.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="content-section">
+				<h2>Meet the Team</h2>
+				<p><strong>Mike Johnson, Owner & Founder</strong><br>
+				A Jacksonville native with over 10 years of experience in landscaping and property maintenance. Mike started Jacksonville Lawn Care with a vision to provide the kind of reliable, quality service he wished was available when he was a homeowner looking for lawn care.</p>
+
+				<p><strong>Sarah Martinez, Operations Manager</strong><br>
+				Sarah brings 8 years of customer service and business operations experience to our team. She ensures that every customer interaction is positive and that our services are delivered on time and to specification.</p>
+
+				<p><strong>Our Field Crew</strong><br>
+				Our experienced team of lawn care professionals are the backbone of our operation. Each crew member is trained in proper techniques, safety protocols, and customer service. They take pride in their work and are committed to making your property look its best.</p>
+			</div>
+
+			<div style="margin-top: 3rem; text-align: center;">
+				<h2>Ready to Experience the Difference?</h2>
+				<p>Join hundreds of satisfied customers who trust Jacksonville Lawn Care for all their landscaping needs.</p>
+				<a href="/contact" style="background-color: #2d5c3e; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold;">Get Your Free Estimate</a>
+			</div>
+		</main>
+	</body>
+</html>

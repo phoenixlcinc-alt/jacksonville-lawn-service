@@ -1,0 +1,310 @@
+---
+
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Contact Us - Jacksonville Lawn Care</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #f8f9fa;
+			}
+			.header {
+				background-color: #2d5c3e;
+				color: white;
+				padding: 1rem 0;
+			}
+			.nav {
+				max-width: 1200px;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 0 2rem;
+			}
+			.nav ul {
+				list-style: none;
+				display: flex;
+				gap: 2rem;
+				margin: 0;
+				padding: 0;
+			}
+			.nav a {
+				color: white;
+				text-decoration: none;
+				font-weight: 500;
+			}
+			.nav a:hover {
+				text-decoration: underline;
+			}
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				padding: 2rem;
+			}
+			.contact-grid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 3rem;
+				margin-top: 2rem;
+			}
+			.contact-info {
+				background: white;
+				border-radius: 8px;
+				padding: 2rem;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			}
+			.contact-form {
+				background: white;
+				border-radius: 8px;
+				padding: 2rem;
+				box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			}
+			.form-group {
+				margin-bottom: 1.5rem;
+			}
+			.form-group label {
+				display: block;
+				margin-bottom: 0.5rem;
+				color: #2d5c3e;
+				font-weight: 500;
+			}
+			.form-group input,
+			.form-group select,
+			.form-group textarea {
+				width: 100%;
+				padding: 0.75rem;
+				border: 1px solid #ddd;
+				border-radius: 4px;
+				font-size: 1rem;
+			}
+			.form-group textarea {
+				height: 120px;
+				resize: vertical;
+			}
+			.submit-btn {
+				background-color: #2d5c3e;
+				color: white;
+				padding: 1rem 2rem;
+				border: none;
+				border-radius: 5px;
+				font-size: 1rem;
+				font-weight: bold;
+				cursor: pointer;
+				width: 100%;
+			}
+			.submit-btn:hover {
+				background-color: #1e3d2a;
+			}
+			.contact-item {
+				display: flex;
+				align-items: center;
+				margin-bottom: 1.5rem;
+				padding: 1rem;
+				background: #f8f9fa;
+				border-radius: 8px;
+			}
+			.contact-item-icon {
+				font-size: 1.5rem;
+				margin-right: 1rem;
+				width: 2rem;
+			}
+			.emergency-notice {
+				background: #fff3cd;
+				border: 1px solid #ffeaa7;
+				border-radius: 8px;
+				padding: 1.5rem;
+				margin: 2rem 0;
+			}
+			.service-hours {
+				background: #e8f5e8;
+				border-radius: 8px;
+				padding: 1.5rem;
+				margin-top: 2rem;
+			}
+			@media (max-width: 768px) {
+				.contact-grid {
+					grid-template-columns: 1fr;
+					gap: 2rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<h1>Jacksonville Lawn Care</h1>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/services">Services</a></li>
+					<li><a href="/locations">Locations</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="container">
+			<h1>Contact Jacksonville Lawn Care</h1>
+			<p>Ready to get started? Contact us today for a free estimate or to schedule your lawn care services. We're here to help make your property look its best!</p>
+
+			<div class="contact-grid">
+				<div class="contact-info">
+					<h2>Get in Touch</h2>
+					
+					<div class="contact-item">
+						<div class="contact-item-icon">📞</div>
+						<div>
+							<strong>Phone</strong><br>
+							<a href="tel:+19045551234" style="color: #2d5c3e; text-decoration: none;">(904) 555-1234</a><br>
+							<small>Call or text for fastest response</small>
+						</div>
+					</div>
+
+					<div class="contact-item">
+						<div class="contact-item-icon">✉️</div>
+						<div>
+							<strong>Email</strong><br>
+							<a href="mailto:info@jacksonvillelawncare.com" style="color: #2d5c3e; text-decoration: none;">info@jacksonvillelawncare.com</a><br>
+							<small>We respond within 24 hours</small>
+						</div>
+					</div>
+
+					<div class="contact-item">
+						<div class="contact-item-icon">📍</div>
+						<div>
+							<strong>Service Area</strong><br>
+							Jacksonville, FL & surrounding areas<br>
+							<small>25-mile radius from downtown</small>
+						</div>
+					</div>
+
+					<div class="contact-item">
+						<div class="contact-item-icon">💬</div>
+						<div>
+							<strong>Text Messages</strong><br>
+							(904) 555-1234<br>
+							<small>Perfect for quick questions or scheduling</small>
+						</div>
+					</div>
+
+					<div class="service-hours">
+						<h3>Service Hours</h3>
+						<ul style="margin: 0; padding-left: 1.5rem;">
+							<li><strong>Monday - Friday:</strong> 7:00 AM - 6:00 PM</li>
+							<li><strong>Saturday:</strong> 8:00 AM - 4:00 PM</li>
+							<li><strong>Sunday:</strong> Emergency calls only</li>
+						</ul>
+						<p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">
+							Office hours for estimates and consultations. Field work may begin earlier or end later depending on weather and schedule.
+						</p>
+					</div>
+				</div>
+
+				<div class="contact-form">
+					<h2>Request Your Free Estimate</h2>
+					<p>Fill out the form below and we'll get back to you within 24 hours with a personalized estimate.</p>
+					
+					<form action="#" method="POST">
+						<div class="form-group">
+							<label for="name">Full Name *</label>
+							<input type="text" id="name" name="name" required>
+						</div>
+
+						<div class="form-group">
+							<label for="email">Email Address *</label>
+							<input type="email" id="email" name="email" required>
+						</div>
+
+						<div class="form-group">
+							<label for="phone">Phone Number *</label>
+							<input type="tel" id="phone" name="phone" required>
+						</div>
+
+						<div class="form-group">
+							<label for="address">Property Address</label>
+							<input type="text" id="address" name="address" placeholder="Street address, City, ZIP">
+						</div>
+
+						<div class="form-group">
+							<label for="service">Service Needed *</label>
+							<select id="service" name="service" required>
+								<option value="">Select a service...</option>
+								<option value="lawn-mowing">Regular Lawn Mowing</option>
+								<option value="landscape-maintenance">Landscape Maintenance</option>
+								<option value="fertilization">Fertilization Program</option>
+								<option value="pressure-washing">Pressure Washing</option>
+								<option value="irrigation">Irrigation Services</option>
+								<option value="tree-shrub">Tree & Shrub Care</option>
+								<option value="multiple">Multiple Services</option>
+								<option value="other">Other (please specify)</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="property-size">Approximate Property Size</label>
+							<select id="property-size" name="property-size">
+								<option value="">Select size...</option>
+								<option value="small">Small (under 1/4 acre)</option>
+								<option value="medium">Medium (1/4 - 1/2 acre)</option>
+								<option value="large">Large (1/2 - 1 acre)</option>
+								<option value="xlarge">Extra Large (over 1 acre)</option>
+								<option value="commercial">Commercial Property</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="message">Additional Details</label>
+							<textarea id="message" name="message" placeholder="Tell us about your specific needs, current lawn condition, special requests, or any questions you have..."></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-preference">Preferred Contact Method</label>
+							<select id="contact-preference" name="contact-preference">
+								<option value="phone">Phone Call</option>
+								<option value="text">Text Message</option>
+								<option value="email">Email</option>
+								<option value="any">Any method is fine</option>
+							</select>
+						</div>
+
+						<button type="submit" class="submit-btn">Request Free Estimate</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="emergency-notice">
+				<h3>🚨 Emergency & Storm Services</h3>
+				<p>For emergency tree removal, storm damage cleanup, or urgent property issues, call us at <strong>(904) 555-1234</strong>. We provide 24/7 emergency response for safety-related issues.</p>
+			</div>
+
+			<div style="background: white; border-radius: 8px; padding: 2rem; margin-top: 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+				<h2>What Happens Next?</h2>
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+					<div style="text-align: center;">
+						<div style="font-size: 2rem; margin-bottom: 0.5rem;">1️⃣</div>
+						<h4>We Contact You</h4>
+						<p>Within 24 hours, we'll reach out to discuss your needs and schedule a convenient time for an estimate.</p>
+					</div>
+					<div style="text-align: center;">
+						<div style="font-size: 2rem; margin-bottom: 0.5rem;">2️⃣</div>
+						<h4>Property Assessment</h4>
+						<p>We'll visit your property to assess your lawn and landscaping needs and provide a detailed estimate.</p>
+					</div>
+					<div style="text-align: center;">
+						<div style="font-size: 2rem; margin-bottom: 0.5rem;">3️⃣</div>
+						<h4>Service Begins</h4>
+						<p>Once you approve the estimate, we'll schedule your services and begin transforming your property.</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
