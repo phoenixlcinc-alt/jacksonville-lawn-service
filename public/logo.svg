@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <linearGradient id="leafGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8e6cf;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7dd3c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c7ea46;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a8e6cf;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#88d8c0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dcedc8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c7ea46;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a8e6cf;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main large leaf -->
+  <path d="M180 150 Q120 180 110 260 Q115 340 180 380 Q240 350 270 280 Q260 200 180 150 Z" fill="url(#leafGradient1)"/>
+  
+  <!-- Second leaf -->
+  <path d="M270 180 Q220 200 215 260 Q220 320 270 340 Q320 320 340 270 Q335 210 270 180 Z" fill="url(#leafGradient2)"/>
+  
+  <!-- Third leaf -->
+  <path d="M320 220 Q290 235 288 275 Q292 315 320 325 Q350 315 365 285 Q362 245 320 220 Z" fill="url(#leafGradient3)"/>
+  
+  <!-- Small accent leaves -->
+  <path d="M240 120 Q220 130 218 150 Q220 170 240 175 Q260 170 270 155 Q268 135 240 120 Z" fill="url(#leafGradient3)"/>
+  
+  <path d="M200 380 Q180 390 178 410 Q180 430 200 435 Q220 430 230 415 Q228 395 200 380 Z" fill="url(#leafGradient2)"/>
+  
+  <!-- Stem/center element -->
+  <path d="M245 250 Q250 280 255 310 Q260 340 265 370" stroke="url(#leafGradient1)" stroke-width="4" fill="none"/>
+</svg>
