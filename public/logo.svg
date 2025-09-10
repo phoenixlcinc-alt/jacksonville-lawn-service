@@ -1,36 +1,50 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
   <defs>
     <linearGradient id="leafGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#a8e6cf;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#7dd3c0;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#c7ea46;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a8e6cf;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#4ecdc4;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="leafGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#c7ea46;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#a8e6cf;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#dcedc8;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#c7ea46;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#88d8c0;stop-opacity:1" />
     </linearGradient>
     <linearGradient id="leafGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#dcedc8;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#c7ea46;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#a8e6cf;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#a8e6cf;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7dd3c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2e8b7d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="leafGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#88d8c0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1f6b63;stop-opacity:1" />
     </linearGradient>
   </defs>
   
-  <!-- Main large leaf -->
-  <path d="M180 150 Q120 180 110 260 Q115 340 180 380 Q240 350 270 280 Q260 200 180 150 Z" fill="url(#leafGradient1)"/>
+  <!-- Main large curved leaf on left -->
+  <path d="M120 200 Q80 240 90 300 Q100 360 140 400 Q180 420 220 380 Q240 340 230 300 Q220 260 200 230 Q180 210 150 205 Q130 200 120 200 Z" fill="url(#leafGradient3)"/>
   
-  <!-- Second leaf -->
-  <path d="M270 180 Q220 200 215 260 Q220 320 270 340 Q320 320 340 270 Q335 210 270 180 Z" fill="url(#leafGradient2)"/>
+  <!-- Central upward leaf -->
+  <path d="M200 100 Q180 120 175 160 Q180 200 200 240 Q220 280 250 300 Q280 310 300 280 Q310 250 300 220 Q290 190 270 160 Q250 130 225 110 Q210 100 200 100 Z" fill="url(#leafGradient1)"/>
   
-  <!-- Third leaf -->
-  <path d="M320 220 Q290 235 288 275 Q292 315 320 325 Q350 315 365 285 Q362 245 320 220 Z" fill="url(#leafGradient3)"/>
+  <!-- Right side leaf -->
+  <path d="M300 150 Q320 170 350 180 Q380 190 400 220 Q410 250 390 280 Q370 300 340 290 Q310 280 290 260 Q275 240 275 210 Q280 180 295 165 Q300 150 300 150 Z" fill="url(#leafGradient2)"/>
   
-  <!-- Small accent leaves -->
-  <path d="M240 120 Q220 130 218 150 Q220 170 240 175 Q260 170 270 155 Q268 135 240 120 Z" fill="url(#leafGradient3)"/>
+  <!-- Bottom curved leaf -->
+  <path d="M150 350 Q120 370 110 400 Q105 430 125 450 Q145 470 175 465 Q205 460 225 440 Q235 420 230 395 Q225 370 210 350 Q195 335 175 340 Q155 345 150 350 Z" fill="url(#leafGradient4)"/>
   
-  <path d="M200 380 Q180 390 178 410 Q180 430 200 435 Q220 430 230 415 Q228 395 200 380 Z" fill="url(#leafGradient2)"/>
+  <!-- Top right accent leaf -->
+  <path d="M350 120 Q370 130 380 150 Q385 170 375 185 Q365 200 345 195 Q325 190 315 175 Q310 160 315 145 Q325 130 340 125 Q350 120 350 120 Z" fill="url(#leafGradient1)"/>
   
-  <!-- Stem/center element -->
-  <path d="M245 250 Q250 280 255 310 Q260 340 265 370" stroke="url(#leafGradient1)" stroke-width="4" fill="none"/>
+  <!-- Lower flowing leaves -->
+  <path d="M250 380 Q270 390 285 405 Q295 420 285 435 Q275 450 260 445 Q245 440 235 425 Q230 410 235 395 Q245 385 250 380 Z" fill="url(#leafGradient2)"/>
+  
+  <!-- Central connecting element -->
+  <circle cx="250" cy="250" r="8" fill="url(#leafGradient3)" opacity="0.7"/>
+  
+  <!-- Additional flowing elements -->
+  <path d="M180 320 Q200 330 210 345 Q215 360 205 370 Q195 375 185 365 Q175 355 175 340 Q178 325 180 320 Z" fill="url(#leafGradient1)"/>
+  
+  <path d="M320 280 Q340 285 350 295 Q355 305 345 315 Q335 320 325 315 Q315 310 315 300 Q318 290 320 280 Z" fill="url(#leafGradient4)"/>
 </svg>
